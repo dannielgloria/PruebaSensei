@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/bg_portal.jpg");  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1,h2,h4,h5,h6,p{
+    color: antiquewhite;
+}
+
+@font-face {
+    font-family: rickm;
+    src: url(/assets/font/shlop_rg.ttf);
+
+}
+
+.rick_font{
+    font-family: 'rickm';
+    font-size: 75px;
+}
