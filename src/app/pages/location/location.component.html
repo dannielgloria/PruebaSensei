@@ -1,0 +1,14 @@
+
+<app-navbar-log></app-navbar-log>
+<body>
+    <div class="container-fluid pt-3 pl-3"> 
+            <div class="align-items-center">
+                <div class="col-12"><br><br><br>
+                    <h1 class="rick_font">Lugares</h1>
+                </div>
+            </div>
+            <app-location-grid 
+            *ngIf="locations.length > 0"
+            [locations]='locations'></app-location-grid>
+    </div>
+</body>

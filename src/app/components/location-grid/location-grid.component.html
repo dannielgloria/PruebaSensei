@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-3 mb-5" *ngFor="let location of locations">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{location.name}}</h5>
+              <p class="card-text">Type: {{location.type}}</p>
+            </div>
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item text-white bg-secondary">Dimension: {{location.dimension}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="{{location.url}}" class="card-link">JSON link</a>
+
+            </div>
+          </div>
+    </div>
+</div>

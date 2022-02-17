@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-3 mb-5" *ngFor="let character of characters">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img src="{{character.image}}" class="card-img-top" alt="{{character.image}}">
+            <div class="card-body">
+              <h5 class="card-title">{{character.name}}</h5>
+              <p class="card-text">Specie: {{character.species}}</p>
+            </div>
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item text-white bg-secondary">Gender: {{character.gender}}</li>
+              <li class="list-group-item text-white bg-secondary">Status: {{character.status}}</li>
+              <li class="list-group-item text-white bg-secondary">Origin: {{character.origin.name}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="{{character.url}}" class="card-link">JSON link</a>
+
+            </div>
+          </div>
+    </div>
+</div>

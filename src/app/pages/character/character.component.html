@@ -1,0 +1,13 @@
+<app-navbar-log></app-navbar-log>
+<body>
+    <div class="container-fluid pt-3 pl-3"> 
+            <div class="align-items-center">
+                <div class="col-12"><br><br><br>
+                    <h1 class="rick_font">Seres "Vivos"</h1>
+                </div>
+            </div>
+            <app-character-grid 
+            *ngIf="characters.length > 0"
+            [characters]="characters"></app-character-grid>
+    </div>
+</body>
